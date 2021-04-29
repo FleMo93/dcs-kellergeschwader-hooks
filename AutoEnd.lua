@@ -21,7 +21,7 @@ function AutoEnd.OnMissionLoadEnd()
 end
 
 function AutoEnd.OnSimulationFrame()
-    if DCS.isMultiplayer() and DCS.isServer() then        
+    if DCS.isMultiplayer() and DCS.isServer() then
         local modelTime = DCS.getModelTime()
         AutoEnd.TimeLeft = totalTime - modelTime
 

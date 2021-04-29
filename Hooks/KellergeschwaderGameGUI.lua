@@ -9,6 +9,7 @@ loadfile(lfs.writedir()..'Scripts\\RandomWeather.lua')()
 loadfile(lfs.writedir()..'Scripts\\AutoEnd.lua')()
 loadfile(lfs.writedir()..'Scripts\\ChatCommands.lua')()
 loadfile(lfs.writedir()..'Scripts\\PlayerStatsSimple.lua')()
+loadfile(lfs.writedir()..'Scripts\\WeaponRestrictions.lua')()
 
 function hooks.onNetMissionChanged()
 end
@@ -37,6 +38,7 @@ function hooks.onSimulationFrame()
     ServerStatus.OnSimulationFrame()
     MessageOfTheDay.OnSimulationFrame()
     RandomWeather.OnSimulationFrame()
+    WeaponRestrictions.OnSimulationFrame()
 end
 
 function hooks.onPlayerConnect(id)
